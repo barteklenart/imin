@@ -1,5 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './Dashboard.scss';
+import Cart from './components/Cart/Cart';
+
 export default function Dashboard() {
-	return <div>Dashboard</div>;
+	return (
+		<Fragment>
+			<h2>Upcoming event</h2>
+			<Cart />
+			<Cart />
+		</Fragment>
+	);
 }
